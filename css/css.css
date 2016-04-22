@@ -1,0 +1,224 @@
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4b4b4b;
+    margin: 0 auto;
+    max-width: 960px;
+}
+#page-wrap { width: 900px; position: relative; }
+#main-content {  width: 440px; height: 300px; margin-left: 218px; }
+
+
+body{
+    margin: 10%;
+    margin-top: 2%;
+}
+.tab { display:inline-block; 
+       margin-left: 40px; }
+#headerImage {
+    text-align: center;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
+
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: lightgray;
+    border-width: thin;
+    border-spacing: 10px;
+    font-size: 15px;
+    display: block;
+    }
+
+
+#leftNav{
+    font-size: 24px;
+    display: inline-block;
+   
+}
+#leftNav > a {
+    text-decoration: none;
+    
+}
+a:hover {
+    color: #598F93;
+}
+#rightNav {
+    float: right;
+    max-width: 25%;
+    height: auto;
+    
+}
+#rightNav > img{
+    display: inline-block;
+    float: right;
+    max-width: 40px;
+}
+
+#imgS1
+    {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48em;
+    padding-top: 0.7em;
+    }
+#imgS2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48em;
+    padding-top: 0.7em;
+    }
+
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    border-top: lightgray;
+    border-bottom: lightgray;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: medium;
+}
+h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    border-top: lightgray;
+    border-bottom: lightgray;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: medium;
+    background-color:lightslategray;
+    background-image: 
+
+        linear-gradient(335deg, #000 23px, transparent 23px ),
+        linear-gradient(155deg, #000 23px, transparent 23px );
+  
+        
+}
+#imageSlide3 {
+    display: block;
+    text-align: center;
+    
+   
+}
+#images {
+    display: inline-block;
+}
+#left{
+    max-width: 49%;
+    float: left;
+    text-align: center;
+    justify-content: center;
+}
+ p {
+    font-size: 24px;
+     text-align: justify;
+     text-align-last: center;
+}
+div > p > first-line{
+    text-align: center;
+}
+#right{
+    justify-content: center;
+    max-width: 49%;
+    float: right;
+    text-align: center;
+}
+footer {
+    clear:both;
+    font-size: 24px;
+}
+
+#leftFooter {
+   
+    max-width: 45%;
+    float: left;
+}
+#rightFooter{
+    text-align: right
+}
+
+
+
+.slides {
+    padding: 0;
+    width: auto;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 30px;
+	height: 30px;
+	margin: 0 4px;
+	float: left;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2
+ {
+	background: rgba(0, 0, 0, 0.8);
+}
